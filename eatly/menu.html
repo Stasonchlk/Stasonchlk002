@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+    <title>Eatly</title>
+</head>
+<body>
+<div class="header">
+    <div class="toHead h1">
+        <a href="index.html"><img class="" src="img/Logo.png"> </a>
+        <a class="logoName" href="index.html">eatly </a>
+    </div>
+    <div class="toHead h2">
+        <a href="menu.html" style="color: #6c5fbc;">Menu </a>
+        <a href="blog.html">Blog </a>
+        <a href="pricing.html">Pricing </a>
+        <a href="contact.html">Contact </a>
+    </div>
+    <div class="pos">
+        <div class="dropdown">
+            <img src="img/men.png" onclick="myFunction()" class="dropbtn">
+            <div id="myDropdown" class="dropdown-content">
+                <button class="b2" style="color: #606060 " onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Login</button>
+                <button class="ger" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+                <a href="menu.html">Menu </a>
+                <a href="blog.html">Blog </a>
+                <a href="pricing.html">Pricing </a>
+                <a href="contact.html">Contact </a>
+            </div>
+        </div>
+    </div>
+    <div class="toHead h3">
+        <button class="b1" style="color: #606060 " onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Login</button>
+        <button class="reg" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+    </div>
+</div>
+<div><hr class="headhr"></div>
+
+<div class="dub">
+    <div class="sh">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <p>50% OFF</p>
+                <p>WEEKENDS</p>
+                <img src="img/FoodImage%20(7.png">
+            </div>
+
+            <div class="mySlides fade">
+                <p>40% OFF</p>
+                <p>WEEKENDS</p>
+                <img src="img/FoodImage%20(7.png">
+            </div>
+
+            <div class="mySlides fade">
+                <p>30% OFF</p>
+                <p>WEEKENDS</p>
+                <img src="img/FoodImage%20(7.png">
+            </div>
+        </div>
+        <div class="center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <input class="search" type="text" placeholder="Search">
+        <div class="vid">
+            <p>Food</p>
+            <div>Resturent</div>
+        </div>
+    </div>
+    <div class="popular">
+        <p class="bj">Category</p>
+        <div>
+            <img src="img/Food%20ategor.png">
+        </div>
+        <p class="bj">Sort By</p>
+        <p class="sj">Recomended</p>
+        <p class="sj">Most Popular</p>
+        <input type="range" min="1" max="100" value="20" class="slider">
+        <div class="op">
+            <p>$0</p>
+            <p>$25</p>
+            <p>$50</p>
+            <p>$100</p>
+            <p>$500</p>
+            <p>$1000</p>
+        </div>
+        <a>Apply</a>
+    </div>
+</div>
+
+
+<p class="topText toT">Our Top Restaurants</p>
+
+<div class="top">
+    <div class="topBlocks">
+        <img class="TopI" src="img/Resturent%20Image%20(1.png">
+        <div class="tAll">
+            <p class="col">Healthy</p>
+            <p class="name">The Chicken King</p>
+            <div class="f">
+                <p>24 min</p>
+                <img class="TI" src="img/Star%20(1.png">
+                <p>4.8</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="topBlocks tw">
+        <div><img class="TopI TI2" src="img/Resturent%20Imag.png"></div>
+        <div class="tAll">
+            <p class="col">Trending</p>
+            <p class="name">The Burger King</p>
+            <div class="f">
+                <p>24 min</p>
+                <img class="TI" src="img/Star%20(1.png">
+                <p>4.9</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="topBlocks">
+        <div><img class="TopI" src="img/Resturent%20Image%20(2.png"></div>
+        <div class="tAll">
+            <p class="col">Healthy</p>
+            <p class="name">The Chicken King</p>
+            <div class="f">
+                <p>24 min</p>
+                <img class="TI" src="img/Star%20(1.png">
+                <p>4.8</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div  class="r"><hr></div>
+
+
+<p class="td toD">Our Top Dishes</p>
+
+<div class="dishes">
+    <div class="menu">
+        <img style="margin-left: 0" src="img/Food%20mage.png">
+        <p class="sName" style="margin-top: -20px">Healthy</p>
+        <p class="bName">Chicken Hell</p>
+        <div>
+            <p>24min</p>
+            <img src="img/Star%20(1.png">
+            <p>4.8</p>
+        </div>
+        <div>
+            <p>$12.99</p>
+            <a>+</a>
+        </div>
+        <a class="a"><img class="" src="img/u.png"></a>
+    </div>
+
+    <div class="menu">
+        <img src="img/Food%20mage%20(1.png">
+        <p class="sName">Trending</p>
+        <p class="bName">Swe Dish</p>
+        <div>
+            <p>34min</p>
+            <img src="img/Star%20(1.png">
+            <p>4.9</p>
+        </div>
+        <div>
+            <p>$19.99</p>
+            <a>+</a>
+        </div>
+        <a class="a"><img class="" src="img/u.png"></a>
+    </div>
+
+    <div class="menu yw">
+        <img src="img/Food%20mage%20(2.png">
+        <p class="sName">Supreme</p>
+        <p class="bName">Swe Dish</p>
+        <div>
+            <p>34min</p>
+            <img src="img/Star%20(1.png">
+            <p>4.9</p>
+        </div>
+        <div>
+            <p>$19.99</p>
+            <a>+</a>
+        </div>
+        <a class="a"><img class="" src="img/u.png"></a>
+    </div>
+
+    <div class="menu fw">
+        <img style="margin-left: 0" src="img/Food%20mage%20(3.png">
+        <p class="sName" style="margin-top: -20px">Healthy</p>
+        <p class="bName">Chicken Hell</p>
+        <div>
+            <p>24min</p>
+            <img src="img/Star%20(1.png">
+            <p>4.8</p>
+        </div>
+        <div>
+            <p>$12.99</p>
+            <a>+</a>
+        </div>
+        <a class="a"><img class="" src="img/u.png"></a>
+    </div>
+
+    <div class="menu dw">
+        <img src="img/Food%20mage%20(4.png">
+        <p class="sName">Trending</p>
+        <p class="bName">Swe Dish</p>
+        <div>
+            <p>34min</p>
+            <img src="img/Star%20(1.png">
+            <p>4.9</p>
+        </div>
+        <div>
+            <p>$19.99</p>
+            <a>+</a>
+        </div>
+        <a class="a"><img class="" src="img/u.png"></a>
+    </div>
+</div>
+
+<div class="r"><hr></div>
+
+
+<p class="qb">Frequently Asked </p>
+<p class="qs" l>Questions</p>
+
+<div class="akar">
+    <button class="accordion">How long does delivery take?</button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consequuntur dicta eius et expedita libero maxime nam officiis provident quibusdam!</p>
+    </div>
+    <hr>
+
+    <button class="accordion">How Does It Work ?</button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, voluptatibus?</p>
+    </div>
+    <hr>
+
+    <button class="accordion">How does your food delivery service work?</button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dignissimos ducimus excepturi illo, pariatur rem.</p>
+    </div>
+    <hr>
+
+    <button class="accordion">What payment options do you accept?</button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aspernatur dolor dolorum est ipsum placeat possimus praesentium quae tenetur vel.</p>
+    </div>
+    <hr>
+
+    <button class="accordion">Do you offer discounts or promotions?</button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, praesentium.</p>
+    </div>
+    <hr>
+</div>
+
+<div class="bottom">
+    <div class="rek">
+        <img style="margin-top: -5px" src="img/Logo.png">
+        <a href="index.html" class="le">eatly</a>
+        <div class="q">
+            <a href="blog.html">Blog</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="menu.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    <div class="hrb"><hr></div>
+    <div class="ccc">
+        <p>© 2023 EATLY All Rights Reserved.</p>
+        <img src="img/Social.png">
+    </div>
+</div>
+
+<div id="id01" class="modal">
+    <div class="cont">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close">&times;</span>
+    </div>
+    <div class="win">
+        <img class="wl" src="img/Logo.png">
+        <div class="fir">
+            <p>Sign Up To eatly</p>
+            <div style="display: flex">
+                <img src="img/G.png">
+                <img src="img/path.png">
+            </div>
+            <p>OR</p>
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email">
+            <input style="margin-bottom: 30px; " type="password" placeholder="Password">
+            <a>SIGN UP</a>
+            <div>
+                <p class="fgh">Already Have An Account?<ll>Sign in</ll> </p>
+            </div>
+            <div style="display: flex">
+                <p class="p1">Privacy Policy</p>
+                <p class="p2">Copyright 2022</p>
+            </div>
+        </div>
+        <div class="sec">
+            <img src="img/Group%20162806.png">
+            <p class="f1">Find Foods With Love </p>
+            <p class="f2">Eatly Is The Food Delivery Dashboard And Having More Than 2K+ Dishes Including Asian, Chinese, Italians And Many More. Our Dashboard Helps You To Manage Orders And Money.</p>
+        </div>
+    </div>
+</div>
+
+<div id="id02" class="modal">
+    <div class="cont ddd">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close">&times;</span>
+    </div>
+    <div class="win">
+        <img class="wl" src="img/Logo.png">
+        <div class="fir">
+            <p>Sign Up To eatly</p>
+            <div style="display: flex">
+                <img src="img/G.png">
+                <img src="img/path.png">
+            </div>
+            <p>OR</p>
+            <input type="email" placeholder="Email">
+            <input style="margin-bottom: 30px; " type="password" placeholder="Password">
+            <a>Login</a>
+            <div>
+                <p class="fgh">Already Have An Account?<ll>Login </ll> </p>
+            </div>
+            <div style="display: flex">
+                <p class="p1">Privacy Policy</p>
+                <p class="p2">Copyright 2022</p>
+            </div>
+        </div>
+        <div class="sec">
+            <img src="img/Group%20162806.png">
+            <p class="f1">Find Foods With Love </p>
+            <p class="f2">Eatly Is The Food Delivery Dashboard And Having More Than 2K+ Dishes Including Asian, Chinese, Italians And Many More. Our Dashboard Helps You To Manage Orders And Money.</p>
+        </div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
