@@ -1,0 +1,666 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
+#navbar {
+    background-color: #484283;
+    padding: 20px 100px 0 100px;
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav div a {
+    cursor: pointer;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#navbar a {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+#navbar div {
+    display: flex;
+    margin: 0 0 0 auto;
+}
+
+#navbar div div a {
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.head {
+    padding: 140px 100px 0 100px;
+    font-weight: 400;
+    font-size: 36px;
+    color: #FFFFFF;
+    background-color: #484283;
+    height: 500px;
+    position: relative;
+}
+
+.head p {
+    z-index: 2;
+    width: 500px;
+}
+
+.head div {
+    position: absolute;
+    z-index: 0;
+    top: 120px;
+    left: 280px;
+    font-weight: 700;
+    font-size: 180px;
+    color: rgba(255,255,255,0.2);
+}
+
+.h1 {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.h2 {
+    font-weight: 400;
+    font-size: 16px;
+    padding: 20px 50px;
+    background-color: #f14f4f;
+    max-width: 260px;
+    color: #FFFFFF;
+}
+
+#myul {
+    list-style-type: none;
+    flex: 8;
+}
+
+.filterDiv {
+    display: none;
+    max-width: 280px;
+    float: left;
+    margin:0 20px 20px 0 ;
+    cursor: pointer;
+}
+
+.filterDiv img {
+    width: 280px;
+}
+
+.show {
+    display: block;
+}
+
+.Pkat {
+    margin: 100px;
+    font-weight: 700;
+    font-size: 30px;
+    color: #444b58;
+}
+
+.contm {
+    margin: 0 50px 0 100px;
+    display: flex;
+}
+
+.podbor {
+    flex: 3;
+    background-color: #fff4ee;
+    padding: 20px;
+    min-width: 240px;
+    max-width: 240px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #444b58;
+    margin-right: 20px;
+    height: 600px;
+}
+
+.btn {
+    float: left;
+    padding: 25px;
+    border: solid 1px black;
+    background-color: #fff4ee;
+    cursor: pointer;
+}
+
+.btnA {
+    float: left;
+    padding: 25px 7px;
+    border: solid 1px black;
+    background-color: #fff4ee;
+    cursor: pointer;
+}
+
+#myBtns {
+    padding: 20px 0;
+}
+
+.podbor p {
+    margin: 10px 0;
+}
+
+.int {
+    display: flex;
+}
+
+.int input{
+    padding: 17px 0;
+    text-align: center;
+    width: 100px;
+    background-color: #fff4ee;
+}
+
+.bt {
+    cursor: pointer;
+    background-color: #fff4ee;
+    border: solid #fff4ee;
+}
+
+.onas {
+    margin: 200px 0;
+    background-color: #484283;
+    position: relative;
+    display: flex;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.figur {
+    position: absolute;
+}
+
+.onas div{
+    padding: 200px 0 0 200px;
+}
+
+.onas div p {
+    margin-bottom: 20px;
+}
+
+.onas img {
+    padding-right: 100px;
+}
+
+.bto {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.btg {
+    font-weight: 700;
+    font-size: 20px;
+    margin: 20px 0 0 auto;
+}
+
+.parfou {
+    display: none;
+    margin: 0 100px;
+    padding: 100px;
+    background-color: #fff4ee;
+}
+
+.pt1 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 30px;
+    color: #444b58;
+}
+
+.pt2 {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #808080;
+}
+
+.pt3 {
+    margin: 20px 0;
+    font-weight: 400;
+    font-size: 24px;
+    color: #444b58;
+}
+
+.menudiv {
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+    color: #444b58;
+}
+
+.menudiv div {
+    justify-content: center;
+    margin: auto;
+}
+
+.menudiv div div {
+    display: flex;
+    margin: 5px 0 10px -200px;
+}
+
+.md2 {
+    border: solid #444b58;
+    padding: 17px 40px;
+    margin: 0 0 0 auto;
+    cursor: pointer;
+}
+
+.parfou2 {
+    display: none;
+    margin: 10px 100px;
+    padding: 100px;
+    background-color: #fff4ee;
+}
+
+.menudiv2 {
+    display: flex;
+}
+
+.menudiv2 div {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 20px 0;
+}
+
+.menudiv2 div input {
+    margin-right: 10px;
+}
+
+.parfou3 {
+    display: none;
+    margin: 10px 100px;
+    padding: 100px;
+    background-color: #fff4ee;
+}
+
+.parfou3 input {
+    padding: 20px 300px 200px 20px;
+}
+
+.parfou4 {
+    display: none;
+    margin: 10px 100px;
+    padding: 100px;
+    background-color: #fff4ee;
+}
+
+.parfou4 div {
+    background-color: #dbbba9;
+    padding: 40px;
+}
+
+.parfou4 div p {
+    font-weight: 700;
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.parfou4 div input {
+    margin-bottom: 20px;
+    padding: 20px 300px 20px 20px;
+}
+
+.parfou4 div a {
+    background-color: #f14f4f;
+    padding: 23px 75px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.parfou5 {
+    background-color: #ffdcb2;
+    width: 250px;
+    padding: 200px 50px;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.personal {
+    background-color: #484283;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 100px;
+    position: relative;
+    margin: 100px 0;
+}
+
+.persdiv {
+    display: flex;
+}
+
+.persdiv div {
+    justify-content: center;
+    margin: 50px auto 0 0;
+    z-index: 2;
+}
+
+.pdt {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.persabs {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.what {
+    margin: 0 200px;
+    color: #444b58;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.ac{
+    margin: 100px 200px;
+}
+.hide{
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.accordion{
+    background: #fff;
+    width: 100%;
+}
+
+.accordion-item{
+    position: relative;
+    width: 100%;
+}
+
+.accordion-item label{
+    color: #444b58;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.accordion-label{
+    padding: 20px 0 20px 30px;
+    width: 100%;
+    display: block;
+    font-size: 18px;
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    &:before{
+        position: absolute;
+        height: 5px;
+        width: 5px;
+        top: 22px;
+        left: 12px;
+        display: inline-block;
+    }
+
+    input[type=checkbox]:checked ~ &:before{
+        transform: rotate(90deg);
+    }
+}
+
+.accordion-child{
+    margin: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    opacity: 0;
+    height: 0;
+    transform: scale(1,0);
+    transform-origin: center top;
+
+    input[type=checkbox]:checked ~ &{
+        margin: 0 -20px 15px -20px;
+        background: #fff;
+        padding: 30px;
+        height: auto;
+        opacity: 1;
+        transform: scale(1,1);
+    }
+}
+
+.contact {
+    display: flex;
+    color: #444b58;
+    font-weight: 400;
+    font-size: 30px;
+    padding: 100px;
+    background-color: #f3f6f6;
+}
+
+.cst {
+    color: #b2b5bb;
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.gor {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.condiv {
+    flex: 1;
+}
+
+.quest {
+    justify-content: center;
+    margin: 100px;
+    display: flex;
+}
+
+.form {
+    padding: 50px 20px;
+    margin: 0 50px 0 auto;
+}
+
+.in {
+    display: block;
+    padding: 20px 145px 20px 20px;
+    margin-top: 20px;
+}
+
+.go {
+    background-color: #f14f4f;
+    padding: 20px 130px;
+    margin-top: 20px;
+}
+
+.questimg {
+    margin: 0 auto 0 0;
+}
+
+.inst {
+    margin-left: 250px;
+}
+
+.bottom {
+    margin: 100px 0 0 0;
+    padding: 50px 100px;
+    background-color: #444b58;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+}
+
+.bottom p {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.bottom div {
+    margin: 0 0 0 auto;
+}
+
+.bottom div a {
+    margin-left: 20px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.cont {
+    margin: 80px 100px;
+    font-size: 40px;
+    font-weight: 400;
+    float: right;
+    cursor: pointer;
+}
+
+.cont:hover {
+    color: #f14f4f;
+}
+
+#card {
+    flex-wrap: wrap;
+}
+
+.cart-item {
+    display: inline-block;
+    margin: 10px;
+}
+
+.podkor {
+    background-color: #FFFFFF;
+    overflow: auto;
+    height: 500px;
+    margin: 100px;
+    display: flex;
+}
+
+#card {
+    flex: 4;
+}
+
+.korzina {
+    float: left;
+    display: flex;
+    margin: 50px;
+    overflow: auto;
+}
+
+.korzina div a{
+    display: block;
+    background-color: #FFFFFF;
+    padding: 5px;
+    border-radius: 8px;
+    width: 295px;
+}
+
+.korzina div {
+    margin: 0 auto 20px 20px;
+    justify-content: center;
+}
+
+.pod {
+    color: black;
+    flex: 1;
+}
+
+@media screen and (max-width: 1408px) {
+    .filterDiv  {
+        margin:0 20px 40px 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>SneakMax</title>
+</head>
+<body>
+
+<div id="navbar">
+    <div class="nav">
+        <a href="#">SneakMax</a>
+        <div>
+            <a href="index.html#Pkat">Каталог</a>
+            <a href="index.html#onas">О нас</a>
+            <a href="index.html#parfou">Подбор товара</a>
+            <a href="index.html#personal">Наша команда</a>
+            <a href="index.html#quest">Доставка и оплата</a>
+            <a href="index.html#contact">Контакты</a>
+            <a onclick="document.getElementById('id02').style.display='block'" class="cart" id="cart">Корзина</a>
+            <a onclick="document.getElementById('id02').style.display='block'" class="cart" id="cart"><img src="img/Vector.svg"></a>
+        </div>
+    </div>
+    <hr>
+</div>
+
+<div class="head">
+    <p>Кроссовки известных брендов
+        с доставкой по России и СНГ</p>
+    <p class="h1">Мы продаем кроссовки брендов Nike, Adidas,
+        Puma, Reebok, Converse и многие другие по низким ценам</p>
+    <a href="index.html#Pkat" class="h2">Перейти к покупкам</a>
+    <div>SneakMax</div>
+</div>
+
+
+<p class="Pkat" id="Pkat">Каталог</p>
+<div class="contm">
+    <div class="podbor">
+        <p style="font-size: 24px; font-weight: 400;">Подбор <br> по параметрам</p>
+        <input type="text" id="myInput" onkeyup="myFunction2()" placeholder="Поиск по названию..">
+        <p>Подбор по цене</p>
+        <div>
+            <div class="int">
+                <input type="text" id="u1">
+                <input type="text" id="i1">
+            </div>
+            <div>
+                <input type="range" id="t1" min="0" max="15000" step="100" oninput="fun5()">
+                <input type="range" id="r1" min="0" max="15000" step="100" oninput="fun4()">
+            </div>
+        </div>
+        <p>Пол</p>
+        <div>
+            <button class="bt" onclick="filterSelection('W')">Женские</button>
+            <button class="bt" onclick="filterSelection('M')">Мужские</button>
+        </div>
+        <p>Размеры</p>
+        <div id="myBtns">
+            <button class="btnA active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('35')">35</button>
+            <button class="btn" onclick="filterSelection('36')">36</button>
+            <button class="btn" onclick="filterSelection('37')">37</button>
+            <button class="btn" onclick="filterSelection('38')">38</button>
+            <button class="btn" onclick="filterSelection('39')">39</button>
+            <button class="btn" onclick="filterSelection('40')">40</button>
+            <button class="btn" onclick="filterSelection('41')">41</button>
+            <button class="btn" onclick="filterSelection('42')">42</button>
+        </div>
+    </div>
+    <div>
+        <ul id="myUL">
+            <li title="Добавить в корзину" class="filterDiv 38 39 W" id="item1" onclick="addToCart(this)">
+                <img src="img/N1.jpg">
+                <a>Женские кроссовки Nike WMNS Air Force 1 '07</a>
+                <num>11 000</num>
+            </li>
+            <li title="Добавить в корзину" class="filterDiv 35 36 37 M" id="item2" onclick="addToCart(this)">
+                <img src="img/N2.jpg">
+                <a>Мужские кроссовки Nike Air Max 90 NRG (CZ1929-200)</a>
+                <num>12 000</num>
+            </li>
+            <li title="Добавить в корзину" class="filterDiv 37 38 W" id="item3" onclick="addToCart(this)">
+                <img src="img/N3.jpg">
+                <a>Мужские кроссовки Nike ACG Lowcate (DM8019-201)</a>
+                <num>13 000</num>
+            </li>
+            <li title="Добавить в корзину" class="filterDiv 40 41 42 W M" id="item4" onclick="addToCart(this)">
+                <img src="img/N4.jpg">
+                <a>Кроссовки Nike Space Hippie 01 (CQ3986-001)</a>
+                <num>14 000</num>
+            </li>
+            <li title="Добавить в корзину" class="filterDiv 35 36 40 M" id="item5" onclick="addToCart(this)">
+                <img src="img/N5.jpg">
+                <a>Мужские кроссовки Nike Zoomx Vaporfly Next% 2 (DJ5457-100)</a>
+                <num>14 000</num>
+            </li>
+            <li title="Добавить в корзину" class="filterDiv 39 40 41 M" id="item6" onclick="addToCart(this)">
+                <img src="img/N6.jpg">
+                <a>Мужские кроссовки Nike ZoomX Vaporfly (CU4111-300)</a>
+                <num>14 000</num>
+            </li>
+            <li  class="filterDiv 42 M" id="item7" onclick="addToCart(this)">
+                <img src="img/N7.jpg">
+                <a>Мужские кроссовки Nike Air Force 1 '07 (CZ0326-100)</a>
+                <num>14 000</num>
+            </li>
+            <li title="Добавить в корзину" class="filterDiv 40 41 42 M" id="item8" onclick="addToCart(this)">
+                <img src="img/N8.jpg">
+                <a>Мужские кроссовки Nike Air Max SC (CW4555-107)</a>
+                <num>14 000</num>
+            </li>
+            <li title="Добавить в корзину" class="filterDiv 37 38 39 M" id="item9" onclick="addToCart(this)">
+                <img src="img/N9.jpg">
+                <a>Мужские кроссовки Nike Air Force 1 '07 LV8 (FQ8825-100)</a>
+                <num>14 000</num>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="onas" id="onas">
+    <div>
+        <p class="bto">Пара слов о нас</p>
+        <p>Спорт держит нас в форме. Учит дисциплине. Объединяет нас. Через спорт мы можем менять жизни. В том числе с помощью воодушевляющих историй спортсменов. Чтобы помочь тебе подняться и двигаться вперед. </p>
+        <p>SneakMax</p>
+    </div>
+    <img class="figur" src="img/figure.svg">
+    <img src="img/Mask%20Group%20(14).png">
+</div>
+
+<div class="parfou block" id="parfou">
+    <p class="pt1">Мы подберем идеальную пару для вас</p>
+    <p class="pt2">Ответьте на три вопроса и мы вышлем каталог с самыми подходящими для вас моделями </p>
+    <hr>
+    <p class="pt3">Какой тип кроссовок рассматриваете?</p>
+    <div class="menu">
+        <div class="menudiv">
+            <div>
+                <img src="img/фото%20кроссовка.jpg">
+                <div>
+                    <input type="checkbox">
+                    <p>кеды</p>
+                </div>
+            </div>
+
+            <div>
+                <img src="img/фото%20кроссовка.jpg">
+                <div>
+                    <input type="checkbox">
+                    <p>кеды</p>
+                </div>
+            </div>
+
+            <div>
+                <img src="img/фото%20кроссовка.jpg">
+                <div>
+                    <input type="checkbox">
+                    <p>кеды</p>
+                </div>
+            </div>
+        </div>
+        <div class="menudiv">
+            <div>
+                <img src="img/фото%20кроссовка.jpg">
+                <div>
+                    <input type="checkbox">
+                    <p>кеды</p>
+                </div>
+            </div>
+
+            <div>
+                <img src="img/фото%20кроссовка.jpg">
+                <div>
+                    <input type="checkbox">
+                    <p>кеды</p>
+                </div>
+            </div>
+
+            <div>
+                <img src="img/фото%20кроссовка.jpg">
+                <div>
+                    <input type="checkbox">
+                    <p>кеды</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="margin: 40px 0">
+    <div class="menudiv">
+        <p>1 из 3</p>
+        <button class="md2" onclick="switchC()">Следующий шаг</button>
+    </div>
+</div>
+
+<div class="parfou2">
+    <p class="pt1">Мы подберем идеальную пару для вас</p>
+    <p class="pt2">Ответьте на три вопроса и мы вышлем каталог с самыми подходящими для вас моделями </p>
+    <hr>
+    <p class="pt3">Какой размер вам подойдет?</p>
+    <div class="menudiv2">
+        <div>
+            <input type="checkbox">
+            <p>мне 36</p>
+        </div>
+
+        <div>
+            <input type="checkbox">
+            <p>36-38</p>
+        </div>
+
+        <div>
+            <input type="checkbox">
+            <p>39-44</p>
+        </div>
+
+        <div>
+            <input type="checkbox">
+            <p>45 и больше</p>
+        </div>
+    </div>
+    <img src="img/Rectangle%2045.png">
+    <hr style="margin: 40px 0">
+    <div class="menudiv">
+        <p>2 из 3</p>
+        <button class="md2" onclick="switchv()">Следующий шаг</button>
+    </div>
+</div>
+
+<div class="parfou3">
+    <p class="pt1">Мы подберем идеальную пару для вас</p>
+    <p class="pt2">Ответьте на три вопроса и мы вышлем каталог с самыми подходящими для вас моделями </p>
+    <hr>
+    <p class="pt3">Уточните какие-либо моменты</p>
+    <input type="text" placeholder="Введите сообщение">
+    <hr style="margin: 40px 0">
+    <div class="menudiv">
+        <p>3 из 3</p>
+        <button class="md2" onclick="switchb()">Следующий шаг</button>
+    </div>
+</div>
+
+<div class="parfou4">
+    <p class="pt1">Ваша подборка готова!</p>
+    <p class="pt2">Оставьте свои контактные данные, чтобы бы мы могли отправить  подготовленный для вас каталог</p>
+    <hr>
+    <div style="margin-top: 20px">
+        <p>Получить предложение</p>
+        <p style="font-weight: 400; font-size: 18px;">Получите подборку подходящих для вас моделей на почту</p>
+        <input type="text" placeholder="Ваше имя">
+        <input style="display: block; margin-bottom:50px; " type="text" placeholder="E-mail">
+        <button class="md2" onclick="switchn()">Получить</button>
+    </div>
+</div>
+
+<div class="parfou5">
+    <img src="img/Vector%20(2).png">
+    <p>Отправлено</p>
+</div>
+
+<div class="personal" id="personal">
+    <p>Наша команда</p>
+    <div class="persdiv">
+        <div>
+            <img src="img/Mask%20Group.jpg">
+            <p>Максим Золоторёв</p>
+            <p class="pdt">Администратор</p>
+        </div>
+
+        <div>
+            <img src="img/Mask%20Group%20(1).jpg">
+            <p>Максим Золоторёв</p>
+            <p class="pdt">Администратор</p>
+        </div>
+
+        <div>
+            <img src="img/Mask%20Group%20(2).jpg">
+            <p>Максим Золоторёв</p>
+            <p class="pdt">Администратор</p>
+        </div>
+    </div>
+    <div class="persdiv">
+        <div>
+            <img src="img/Mask%20Group%20(3).jpg">
+            <p>Максим Золоторёв</p>
+            <p class="pdt">Администратор</p>
+        </div>
+
+        <div>
+            <img src="img/Mask%20Group%20(4).jpg">
+            <p>Максим Золоторёв</p>
+            <p class="pdt">Администратор</p>
+        </div>
+
+        <div>
+            <img src="img/Mask%20Group%20(5).jpg">
+            <p>Максим Золоторёв</p>
+            <p class="pdt">Администратор</p>
+        </div>
+    </div>
+    <div id="quest"></div>
+    <img class="persabs" src="img/Group%2072.svg">
+</div>
+
+<p class="what">Часто задаваемые вопросы</p>
+
+<div class="ac">
+    <ul class="accordion">
+        <hr>
+        <li class="accordion-item">
+            <input id="s1" class="hide" type="checkbox" checked>
+            <label for="s1"class="accordion-label" >Это первый вопрос</label>
+            <p class="accordion-child">А это ответ на первй вопрос</p>
+        </li>
+        <hr>
+        <li class="accordion-item">
+            <input id="s2" class="hide" type="checkbox">
+            <label for="s2" class="accordion-label">Второй вопрос</label>
+            <p class="accordion-child">А это ответ на второй вопрос</p>
+        </li>
+        <hr>
+    </ul>
+</div>
+
+<div class="contact" id="contact">
+    <div class="condiv">
+        <p style="font-weight: 700">Контакты</p>
+        <p class="cst">ГЛАВНЫЙ ОФИС</p>
+        <p>+7 800 789 89 89</p>
+        <p class="gor">г. Санкт-Петербург, Комсомольскаяб 43 к1</p>
+        <p class="cst">ОТДЕЛ ПРОДАЖ</p>
+        <p>+7 800 789 89 89</p>
+        <p class="gor">г. Санкт-Петербург, Комсомольскаяб 43 к1</p>
+        <div>
+            <img src="img/VK.svg">
+            <img src="img/Instagram.svg">
+        </div>
+    </div>
+    <div class="condiv">
+        <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/geo/sankt_peterburg/53152804/?ll=30.304908%2C59.917966&utm_medium=mapframe&utm_source=maps&z=10.2" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс 
+            Карты — транспорт, навигация,
+            поиск мест</a><iframe src="https://yandex.ru/map-widget/v1/?ll=30.304908%2C59.917966&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzE1MjgwNBIr0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsyIKDRSE8kEVNMFvQg%2C%2C&z=10.2" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+    </div>
+</div>
+
+<div class="quest" id="quest2">
+    <form class="form">
+        <p>Есть вопросы?</p>
+        <p>Заполните форму и наш менеджер свяжется с вами</p>
+        <div class="controls">
+            <input class="in" type="text" placeholder="Ваше имя">
+            <input class="in" type="text" placeholder="Номер телефона">
+            <input class="go" type="reset" value="Отправить">
+        </div>
+    </form>
+    <div  class="questimg">
+        <img class="inst" src="img/1024px-Instagram_logo%201.png">
+        <img src="img/Group%2061.png">
+    </div>
+</div>
+
+<div class="bottom">
+    <p>SneakMax</p>
+    <div>
+        <a>Каталог</a>
+        <a>О нас</a>
+        <a>Подбор товара</a>
+        <a>Доставка и оплата</a>
+        <a>Контакты</a>
+    </div>
+</div>
+
+<div id="id02" class="modal">
+    <div class="cont">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close">&times;</span>
+    </div>
+    <div class="podkor">
+        <div id="card" class="korzina"></div>
+        <div class="pod">Вы потратите много денег, вам это не надо! <br> Купить НЕЛЬЗЯ!!!</div>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
