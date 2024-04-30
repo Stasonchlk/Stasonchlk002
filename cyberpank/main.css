@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Archangelsk, serif;
+}
+
+@font-face {
+    font-family: Archangelsk;
+    src: url("fonts/ofont.ru_Archangelsk.ttf");
+    font-style: normal;
+    font-weight: normal
+}
+
+.top {
+    display: flex;
+    position: absolute;
+    padding: 20px;
+    margin: 0 100px;
+    width: calc(100vw - 200px);
+}
+
+.slideshow {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    height: 100vh;
+}
+
+.mySlides {
+    display: none;
+}
+
+.info {
+    clip-path: polygon(10% 0, 100% 0, 100% 80%, 90% 100%, 0 100%, 0 20%);
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+    background-color: #f8f200;
+    color: black;
+    padding: 50px;
+}
+
+.info p {
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.info a {
+    color: #f8f200;
+    background-color: black;
+    padding: 20px 50px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.fl {
+    display: flex;
+}
+
+.sity {
+    margin: 100px ;
+}
+
+.sity p {
+    margin-bottom: 40px;
+    color: black;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.sity div img {
+    --widthi1: calc((100vw - 250px)/3*2);
+    width: var(--widthi1);
+    height: 30vw;
+}
+
+.sity div div img {
+    --widthi2: calc((100vw - 250px)/3);
+    width: var(--widthi2);
+    height: 14vw;
+    margin-bottom: 2vw;
+
+}
+
+.play {
+    background-color: black;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.playtop, .playbot {
+    width: 100%;
+}
+.playbot {
+    margin-bottom: -30px;
+}
+
+.topT {
+    font-weight: 400;
+    font-size: 50px;
+    margin: 50px 100px;
+}
+
+.topT p {
+    margin: 50px 0 0 50px;
+}
+
+.input {
+    margin: 150px 0 100px 100px;
+}
+
+.input input {
+    background-color: black;
+    height: 35px;
+    width: 400px;
+    border: black solid;
+    color: #FFFFFF;
+}
+
+.input a {
+    background-color: #f8f200;
+    padding: 20px 50px;
+    margin-right: 100px;
+}
+
+.input img {
+    margin-right: 100px;
+    width: calc(50vw - 100px);
+}
+
+.input label input{
+    margin-bottom: 40px;
+}
+
+.input div div  {
+    margin-top: 40px;
+}
+
+.input div div input {
+    width: 15px;
+    margin-right: 10px;
+}
+
+.input div div p {
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.input hr {
+    width: 400px;
+    margin-bottom: 50px;
+}
+
+.allin {
+    background-color: #f8f200;
+    padding: 100px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.allin p {
+    margin-bottom: 40px;
+}
+
+.allin .fl {
+    height: 30px;
+    margin-bottom: 40px;
+}
+
+.allin a {
+    padding: 20px 50px;
+    background-color: black;
+    color: #f8f200;
+}
+
+.pay {
+    width: 50%;
+    background-color: black;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+    padding:50px;
+}
+
+.pay p {
+    margin-bottom: 20px;
+}
+
+.pay div img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.payT {
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.cyb {
+    padding: 20px 200px;
+}
+
+.cyb div {
+    margin: 20px 0 0 auto;
+}
+
+.cyb div a {
+    margin-left: 20px;
+}
+
+.bottom {
+    background-color: black;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px;
+}
+
+.poln img{
+    width: calc(50vw - 150px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
